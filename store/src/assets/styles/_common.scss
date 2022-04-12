@@ -1,0 +1,117 @@
+// Themes
+html {
+  font-family: $font-family;
+  font-size: var(--font-size);  
+  transition: all ease-in-out 400ms;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--theme-background)!important;
+  color: var(--theme-color)!important;
+  transition: all ease-in-out 400ms;
+}
+
+// Fonts
+
+// for common styles
+
+
+.card {
+  color: brown;
+  width: -webkit-fill-available;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin: 15px auto;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.border-right {
+  border: 1px solid #ccc {
+    top: none;
+    bottom: none;
+    #{$start}: none;
+  };
+}
+
+.border-left {
+  border: 1px solid #ccc {
+    top: none;
+    bottom: none;
+    #{$end}: none;
+  };
+}
+
+.border-bottom {
+  border: 1px solid #ccc {
+    top: none;
+    #{$start}: none;
+    #{$end}: none;
+  };
+}
+
+.border-top {
+  border: 1px solid #ccc {
+    bottom: none;
+    #{$start}: none;
+    #{$end}: none;
+  };
+}
+
+.mat-toolbar {
+  background-color: transparent;
+}
+
+.darkMode .mat-toolbar {
+  background-color: transparent;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+@include media-breakpoint-down(sm) { // @media (max-width: 575px)
+  // ...
+}
+
+@include media-breakpoint-between(sm, md) { // @media (min-width: 576px) and (max-width: 767px)
+  // ...
+}
+
+@include media-breakpoint-between(md, lg) { // @media (min-width: 768px) and (max-width: 991px)
+ // ...
+}
+
+@include media-breakpoint-between(lg, xl) { // @media (min-width: 992px) and (max-width: 1199px)
+  // ...
+}
+
+@include media-breakpoint-between(xl, xxl) { // @media (min-width: 1200px) and (max-width: 1399px)
+  // ...
+}
+
+@include media-breakpoint-up(xxl) { // @media (min-width: 1400px)
+  // ...
+}

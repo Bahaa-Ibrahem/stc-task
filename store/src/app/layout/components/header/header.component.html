@@ -1,0 +1,46 @@
+<div class="header">
+    <div class="row border-bottom d-flex align-items-stretch">
+        <div class="col-2 p-3 border-right">
+            <img class="log" src="../../../../assets/images/Stc-logo.png" alt="">
+        </div>
+        <div class="col-6 p-3 border-right d-flex align-items-center justify-content-end">
+            <ul class="clickable">
+                <li class="mr-5">
+                    <!-- <i [ngStyle]="{'color' : dark ? 'black' : 'white'}" (click)="dark = !dark" class="fa-solid fa-circle-half-stroke"></i>             -->
+        
+                </li>
+                <li>
+                    <mat-toolbar color="transparent">
+                        <mat-icon class="mr-8">brightness_5</mat-icon>
+                        <mat-slide-toggle name="fieldName" ngDefaultControl [formControl]="toggleControl" class="mr-8">
+                        </mat-slide-toggle>
+                        <mat-icon>bedtime</mat-icon>
+                    </mat-toolbar>
+                </li>
+                <li>
+                    <i (click)="samllFont = !samllFont" class="fa-duotone fa-a"></i>
+        
+                </li>
+                <li>
+                    <i (click)="meduimFont = !meduimFont" class="fa-duotone fa-a fa-lg"></i>
+        
+                </li>
+                <li>
+                    <i (click)="largFont = !largFont" class="fa-duotone fa-a fa-xl"></i>
+        
+                </li>
+            </ul>          
+        </div>
+        <div class="col-3 p-3 border-right d-flex align-items-center justify-content-around">
+            <i class="fa-solid fa-magnifying-glass clickable"></i>
+            <select name="language" [(ngModel)]='language' (ngModelChange)="onSelect($event)" class="clickable lang">
+                <option value="en" selected="true">EN</option>
+                <option value="ar">AR</option>
+            </select>
+            <button class="btn sign-btn">{{ 'signIn' | translate }}</button>
+        </div>
+        <div class="col-1 p-3 d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-align-right fa-xl clickable"></i>        
+        </div>
+    </div>
+</div>

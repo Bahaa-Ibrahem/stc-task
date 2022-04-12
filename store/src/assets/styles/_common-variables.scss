@@ -1,0 +1,62 @@
+// THIS FILE CONTAINS ALL UI VARIABLES
+
+/* color variables */
+
+// $primary-color: #003461;
+$primary-color: #666A6D;
+$primary-color-darker: darken($primary-color, 5%);
+$primary-color-lighter: lighten($primary-color, 10%);
+
+$secondary-color: #21ba45;
+$secondary-color-darker: darken($secondary-color, 5%);
+$secondary-color-lighter: lighten($secondary-color, 10%);
+
+$text-color: #434a54;
+$text-color-light: #6c757d;
+$text-color-darker: darken($text-color, 10%);
+$text-color-info: #2185d0;
+$text-color-danger: #db2828;
+$text-color-warning: #fbbd08;
+$orange: #f2711c;
+$pink: #e03997;
+$gray: #666A6D;
+
+/* border variables */
+
+$border-radius-sm: 3px;
+$border-radius-md: 5px;
+$border-radius-lg: 7px;
+$border-radius-xlg: 10px;
+$border-radius-circule: 50%;
+
+/* fonts */
+
+$font-family: 'Montserrat', sans-serif;
+$main-font: "";
+$main-font-bold: "";
+
+/* theme colors variables */
+
+:root {
+    --theme-background: white;
+    --theme-color: #{$primary-color-lighter};
+}
+
+:root.darkMode {
+    --theme-background: #222226;
+    --theme-color: #{$primary-color-darker};
+}
+
+/* font sizes variables */
+
+:root[font=small] {
+    --font-size: 12px;
+}
+
+:root {
+    --font-size: 15px;
+}
+
+:root[font=larg] {
+    --font-size: 20px;
+}
